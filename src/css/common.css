@@ -1,0 +1,121 @@
+html {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.page {
+  min-height: 100vh;
+  background-color: #fff;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.title {
+  font-size: 2rem;
+}
+
+.title_center {
+  text-align: center;
+}
+
+.button {
+  display: block;
+  padding: 12px 16px;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 1rem;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background-color .15s ease;
+}
+
+.button_color_blue {
+  color: #3A79FF;
+  background-color: #D2E1FF;
+}
+
+.button_color_blue:hover {
+  background-color: #c2d6ff;
+}
+
+.button_color_dark-blue {
+
+}
+
+.button_color_red {
+
+}
+
+.button_color_gray {
+
+}
+
+.button_color_white {
+
+}
+
+.button_color_transparent {
+
+}
+
+.button_type_text-icon {
+
+}
+
+.button_type_icon {
+  width: 40px;
+  height: 40px;
+  text-indent: -999px;
+  background-color: rgba(255, 255, 255, 0);
+  overflow: hidden;
+}
+
+.button_type_circle {
+  border-radius: 50%; 
+}
+
+.button_size_large {
+
+}
+
+.button_icon_arrow-left {
+
+}
+
+.button_icon_arrow-right {
+
+}
+
+.button_icon_play {
+
+}
+
+.button_icon_burger {
+  background-image: url(../images/burger.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+}
+
+.button_icon_close {
+  background-image: url(../images/close.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+}
