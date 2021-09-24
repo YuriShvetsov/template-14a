@@ -25,7 +25,13 @@
 }
 
 .button_color_dark-blue {
+  color: #fff;
+  background-color: #4C85FF;
+}
 
+.button_color_dark-blue:hover {
+  color: #fff;
+  background-color: #4277e9;
 }
 
 .button_color_red {
@@ -41,11 +47,18 @@
 }
 
 .button_color_transparent {
+  color: #ADB4D2;
+  border: 1px solid #D1D1E4;
+  transition: background-color .15s ease;
+}
 
+.button_color_transparent:hover {
+  background-color: rgba(0,0,0,0.03);
 }
 
 .button_type_text-icon {
-
+  padding-right: 36px;
+  background-position: calc(100% - 16px) 50%;
 }
 
 .button_type_icon {
@@ -93,6 +106,12 @@
   background-size: 12px 12px;
 }
 
+.button_icon_play-white {
+  background-image: url(../images/play-white.svg);
+  background-repeat: no-repeat;
+  background-size: 12px 12px;
+}
+
 .button_icon_burger {
   background-image: url(../images/burger.svg);
   background-position: 50% calc(50% + 3px);
@@ -111,6 +130,11 @@
 
   .button {
     padding: 10px 14px;
+  }
+
+  .button_type_text-icon {
+    padding-right: 32px;
+    background-position: calc(100% - 16px) 50%;
   }
 
 }

@@ -108,3 +108,180 @@
   }
   
 }
+
+/* Customers */
+
+.customers__wrapper {
+  padding: 70px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.customers__item {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.customers__item svg {
+  width: auto;
+  max-height: 30px;
+}
+
+.customers__item svg path {
+  transition: fill .15s ease;
+}
+
+.customers__item:hover svg path {
+  fill: #5982E7;
+}
+
+@media screen and (max-width: 720px) {
+
+  .customers__wrapper {
+    overflow-x: auto;
+  }
+
+  .customers__wrapper::-webkit-scrollbar {
+    display: none;
+  }
+
+  .customers__item:not(:last-child) {
+    margin-right: 16px;
+  }
+
+}
+
+@media screen and (max-width: 720px) {
+
+  .customers__wrapper {
+    padding: 50px 0;
+  }
+
+}
+
+/* Plan and manage */
+
+.plan-and-manage {
+  padding: 170px 0;
+  background-color: #F5F8FF;
+  overflow: hidden;
+}
+
+.plan-and-manage__wrapper {
+  position: relative;
+}
+
+.plan-and-manage__text {
+  width: calc(50% - 55px);
+}
+
+.plan-and-manage__subtitle {
+  margin-bottom: 27px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px;
+  color: #3D4F9F;
+}
+
+.plan-and-manage__title {
+  margin-bottom: 27px;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 45px;
+  color: #3D4F9F;
+}
+
+.plan-and-manage__desc {
+  margin-bottom: 47px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 29px;
+  color: #8D96BD;
+}
+
+.plan-and-manage__image {
+  width: 62%;
+  height: auto;
+  padding: 50px;
+  position: absolute;
+  top: calc(50% + 20px);
+  right: -80px;
+  transform: translateY(-50%);
+
+  object-fit: contain;
+  object-position: center;
+  filter: drop-shadow(0 30px 50px #d1daf0); 
+}
+
+.plan-and-manage__controls {
+  display: flex;
+}
+
+.plan-and-manage__link-video {
+  margin-right: 5px;
+  text-decoration: none;
+}
+
+.plan-and-manage__link-features {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 991px) {
+
+  .plan-and-manage {
+    padding: 70px 0;
+  }
+
+  .plan-and-manage__text {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .plan-and-manage__subtitle {
+    margin: 5px 0;
+  }
+
+  .plan-and-manage__title {
+    margin: 10px 0;
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  .plan-and-manage__desc {
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .plan-and-manage__image {
+    width: 70%;
+    height: auto;
+    position: relative;
+    top: unset;
+    right: unset;
+    transform: unset;
+
+    display: block;
+    margin: 0 auto;
+  }
+
+  .plan-and-manage__controls {
+    justify-content: center;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+
+  .plan-and-manage {
+    padding: 50px;
+  }
+
+  .plan-and-manage__image {
+    width: 100%;
+  }
+
+}

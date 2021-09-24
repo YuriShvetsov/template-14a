@@ -113,7 +113,7 @@
 @media screen and (max-width: 991px) {
 
   .footer {
-    padding: 30px 0;
+    padding: 70px 0;
   }
 
   .footer__row {
@@ -156,7 +156,7 @@
 @media screen and (max-width: 480px) {
 
   .footer {
-    padding: 30px 0;
+    padding: 50px 0;
   }
   
   .footer__row:not(:last-child) {
