@@ -1,5 +1,7 @@
-@import './fonts.css';
+/* @import './fonts.css'; */
 @import './common.css';
+@import './button.css';
+
 @import './partials/header.css';
 @import './partials/footer.css';
 @import './partials/home.css';

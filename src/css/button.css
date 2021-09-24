@@ -1,0 +1,124 @@
+.button {
+  display: block;
+  padding: 12px 16px;
+
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 1rem;
+
+  border: none;
+  outline: none;
+  border-radius: 2px;
+
+  cursor: pointer;
+  appearance: none;
+  transition: background-color .15s ease;
+}
+
+.button_color_blue {
+  color: #3A79FF;
+  background-color: #D2E1FF;
+}
+
+.button_color_blue:hover {
+  background-color: #c2d6ff;
+}
+
+.button_color_dark-blue {
+
+}
+
+.button_color_red {
+
+}
+
+.button_color_gray {
+
+}
+
+.button_color_white {
+  background-color: #fff;
+}
+
+.button_color_transparent {
+
+}
+
+.button_type_text-icon {
+
+}
+
+.button_type_icon {
+  width: 40px;
+  height: 40px;
+  text-indent: -999px;
+  background-color: rgba(255, 255, 255, 0);
+  overflow: hidden;
+}
+
+.button_type_img {
+  position: relative;
+}
+
+.button_type_img svg,
+.button_type_img img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: contain;
+  object-position: center;
+}
+
+.button_type_circle {
+  border-radius: 50%; 
+}
+
+.button_size_large {
+
+}
+
+.button_icon_arrow-left {
+
+}
+
+.button_icon_arrow-right {
+
+}
+
+.button_icon_play {
+  background-image: url(../images/play.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 12px 12px;
+}
+
+.button_icon_burger {
+  background-image: url(../images/burger.svg);
+  background-position: 50% calc(50% + 3px);
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+}
+
+.button_icon_close {
+  background-image: url(../images/close.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+}
+
+@media screen and (max-width: 991px) {
+
+  .button {
+    padding: 10px 14px;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+
+  .button {
+    padding: 8px 12px;
+  }
+
+}

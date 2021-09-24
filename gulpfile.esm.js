@@ -10,7 +10,7 @@ import sync from 'browser-sync'
 import pimport from 'postcss-import'
 import postcssMinMax from 'postcss-media-minmax'
 import autoprefixer from 'autoprefixer'
-import postcssCsso from 'postcss-csso'
+import cssnano from 'cssnano'
 
 const isProd = gutil.env.type === 'production'
 
@@ -43,7 +43,7 @@ export const styles = () => {
       pimport,
       postcssMinMax,
       autoprefixer,
-      postcssCsso
+      cssnano
     ]))
     .pipe(replace(/\.\.\//g, ''))
     .pipe(gulp.dest('dist'))
@@ -104,6 +104,17 @@ export const watch = () => {
     'src/images/**/*'
   ], gulp.series(copy))
 }
+
+export const build = gulp.series(
+  clean,
+  gulp.parallel(
+    html,
+    styles,
+    scripts,
+    copy
+  ),
+  normalizePaths
+)
 
 export default gulp.series(
   clean,

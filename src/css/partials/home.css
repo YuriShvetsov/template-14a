@@ -1,0 +1,110 @@
+/* Hero */
+
+.hero {
+  padding: 80px 0 200px;
+  position: relative;
+  background: url(../images/clouds.svg),
+    url(../images/chart.svg),
+    linear-gradient(180deg, #F4F7FF, #F1F5FF);
+  background-position: center,
+    50% 100%,
+    center;
+  background-repeat: no-repeat;
+  background-size: contain,
+    contain 347px,
+    100%;
+}
+
+.hero__text {
+  padding: 10px;
+  text-align: center;
+}
+
+.hero__subtitle {
+  margin: 10px 0;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15px;
+  color: #3D4F9F;
+}
+
+.hero__title {
+  margin: 16px 0;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 60px;
+  color: #3D4F9F;
+}
+
+.hero__desc {
+  width: 100%;
+  max-width: 500px;
+  margin: 28px auto 20px;
+
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 29px;
+  color: #8D96BD;
+}
+
+.hero__play-button {
+  width: 52px;
+  height: 52px;
+  margin: 0 auto;
+  box-shadow: 0px 10px 50px rgba(201, 209, 231, 0.6);
+  transition: background-color 150ms ease;
+}
+
+.hero__play-button:hover {
+  background-color: #5E81FF;
+}
+
+.hero__play-button:hover svg path {
+  fill: #fff;
+}
+
+@media screen and (max-width: 1199px) {
+
+  .hero {
+    background: url(../images/clouds.svg),
+      url(../images/chart.svg),
+      linear-gradient(180deg, #F4F7FF, #F1F5FF);
+    background-position: center,
+      50% 100%,
+      center;
+    background-repeat: no-repeat;
+    background-size: contain,
+      calc(100% + 100px),
+      100%;
+  }
+
+  .hero__subtitle {
+    margin: 5px 0;
+  }
+
+  .hero__title {
+    margin: 10px 0;
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  .hero__desc {
+    max-width: 420px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .hero__play-button {
+    width: 44px;
+    height: 44px;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+
+  .hero {
+    padding: 60px 0 140px;
+  }
+  
+}

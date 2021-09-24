@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1441px" height="465px" viewBox="0 0 1441 465" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Untitled</title>
+    <defs>
+        <linearGradient x1="19.3244969%" y1="100.127666%" x2="19.3244969%" y2="-31.1224496%" id="linearGradient-1">
+            <stop stop-color="#4B71FF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#6B89F8" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="chart">
+            <path d="M0,422.51 C202.703,422.51 347.472,387.633 480.333,389.758 C789.74,394.705 643.639,247.682 960.667,247.682 C1305.86,247.682 1223.24,118 1441,118" id="Path" stroke="#5F82FF" stroke-width="3"></path>
+            <path d="M480.333,389.758 C347.472,387.633 202.703,422.51 0,422.51 L0,465 L1441,465 L1441,118 C1223.24,118 1305.86,247.682 960.667,247.682 C643.639,247.682 789.74,394.705 480.333,389.758 Z" id="Path" fill-opacity="0.4" fill="url(#linearGradient-1)" fill-rule="nonzero"></path>
+            <line x1="924.5" y1="200" x2="924.5" y2="389" id="Path" stroke="#D8E0F7"></line>
+            <g id="Group" transform="translate(917.000000, 241.000000)">
+                <circle id="Oval" fill="#FFFFFF" fill-rule="nonzero" cx="7.5" cy="7.5" r="7.5"></circle>
+                <circle id="Oval" stroke="#5E80FE" stroke-width="2" cx="7.5" cy="7.5" r="6.5"></circle>
+            </g>
+            <line x1="1332.5" y1="0" x2="1332.5" y2="317" id="Path" stroke="#D8E0F7"></line>
+            <g id="Group" transform="translate(1325.000000, 127.000000)">
+                <circle id="Oval" fill="#FFFFFF" fill-rule="nonzero" cx="7.5" cy="7.5" r="7.5"></circle>
+                <circle id="Oval" stroke="#5E80FE" stroke-width="2" cx="7.5" cy="7.5" r="6.5"></circle>
+            </g>
+            <line x1="515.5" y1="378" x2="515.5" y2="437" id="Path" stroke="#D8E0F7"></line>
+            <line x1="107.5" y1="262" x2="107.5" y2="452" id="Path" stroke="#D8E0F7"></line>
+            <g id="Group" transform="translate(100.000000, 412.000000)">
+                <circle id="Oval" fill="#FFFFFF" fill-rule="nonzero" cx="7.5" cy="7.5" r="7.5"></circle>
+                <circle id="Oval" stroke="#5E80FE" stroke-width="2" cx="7.5" cy="7.5" r="6.5"></circle>
+            </g>
+        </g>
+        <g id="Group" transform="translate(508.000000, 382.000000)">
+            <circle id="Oval" fill="#FFFFFF" fill-rule="nonzero" cx="7.5" cy="7.5" r="7.5"></circle>
+            <circle id="Oval" stroke="#5E80FE" stroke-width="2" cx="7.5" cy="7.5" r="6.5"></circle>
+        </g>
+    </g>
+</svg>
