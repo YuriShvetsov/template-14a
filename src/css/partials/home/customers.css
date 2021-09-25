@@ -7,7 +7,12 @@
 .customers__wrapper {
   padding: 0 16px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  overflow-x: auto;
+}
+
+.customers__wrapper::-webkit-scrollbar {
+  display: none;
 }
 
 .customers__item {
@@ -16,9 +21,13 @@
   align-items: flex-end;
 }
 
+.customers__item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .customers__item svg {
   width: auto;
-  max-height: 30px;
+  max-height: 50px;
 }
 
 .customers__item svg path {
@@ -32,15 +41,7 @@
 @media screen and (max-width: 720px) {
 
   .customers__wrapper {
-    overflow-x: auto;
-  }
-
-  .customers__wrapper::-webkit-scrollbar {
-    display: none;
-  }
-
-  .customers__item:not(:last-child) {
-    margin-right: 16px;
+    justify-content: space-between;
   }
 
 }

@@ -198,7 +198,13 @@
   }
 
   .features__links-gap {
-    width: 80px;
+    width: unset;
+    padding: 0 16px;
+  }
+
+  .features__links-gap::before,
+  .features__links-gap::after {
+    display: none;
   }
 
   .features__links-gap::before {
