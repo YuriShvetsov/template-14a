@@ -161,14 +161,13 @@
   }
 
   .features__stage {
+    width: 100%;
     max-width: unset;
     padding: 20px 0;
 
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-
-    /* border: 1px solid red; */
   }
 
   .features__stage:not(:last-child) {
