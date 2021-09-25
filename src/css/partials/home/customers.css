@@ -1,0 +1,46 @@
+/* Customers */
+
+.customers {
+  padding: 70px 0;
+}
+
+.customers__wrapper {
+  padding: 0 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.customers__item {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.customers__item svg {
+  width: auto;
+  max-height: 30px;
+}
+
+.customers__item svg path {
+  transition: fill .15s ease;
+}
+
+.customers__item:hover svg path {
+  fill: #5982E7;
+}
+
+@media screen and (max-width: 720px) {
+
+  .customers__wrapper {
+    overflow-x: auto;
+  }
+
+  .customers__wrapper::-webkit-scrollbar {
+    display: none;
+  }
+
+  .customers__item:not(:last-child) {
+    margin-right: 16px;
+  }
+
+}

@@ -5,6 +5,8 @@
   font-size: 13px;
   font-weight: bold;
   line-height: 1rem;
+  text-decoration: none;
+  text-align: center;
 
   border: none;
   outline: none;
@@ -35,7 +37,12 @@
 }
 
 .button_color_red {
+  color: #D43F3F;
+  background-color: #FFD7D7;
+}
 
+.button_color_red:hover {
+  background-color: #f8b6b6;
 }
 
 .button_color_gray {
@@ -143,6 +150,12 @@
 
   .button {
     padding: 8px 12px;
+  }
+
+  .button_type_text-icon {
+    padding-right: 28px;
+    background-position: calc(100% - 12px) 50%;
+    background-size: 10px 10px;
   }
 
 }

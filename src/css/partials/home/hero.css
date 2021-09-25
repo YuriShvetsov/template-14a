@@ -1,0 +1,78 @@
+/* Hero */
+
+.hero {
+  padding: 80px 0 200px;
+  position: relative;
+  background: url(../images/clouds.svg),
+    url(../images/chart.svg),
+    linear-gradient(180deg, #F4F7FF, #F1F5FF);
+  background-position: center,
+    50% 100%,
+    center;
+  background-repeat: no-repeat;
+  background-size: contain,
+    contain 347px,
+    100%;
+}
+
+.hero__text {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.hero__desc {
+  width: 100%;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero__play-button {
+  width: 52px;
+  height: 52px;
+  margin: 0 auto;
+  box-shadow: 0px 10px 50px rgba(201, 209, 231, 0.6);
+  transition: background-color 150ms ease;
+}
+
+.hero__play-button:hover {
+  background-color: #5E81FF;
+}
+
+.hero__play-button:hover svg path {
+  fill: #fff;
+}
+
+@media screen and (max-width: 1199px) {
+
+  .hero {
+    background: url(../images/clouds.svg),
+      url(../images/chart.svg),
+      linear-gradient(180deg, #F4F7FF, #F1F5FF);
+    background-position: center,
+      50% 100%,
+      center;
+    background-repeat: no-repeat;
+    background-size: contain,
+      calc(100% + 100px),
+      100%;
+  }
+
+  .hero__desc {
+    max-width: 420px;
+  }
+
+  .hero__play-button {
+    width: 44px;
+    height: 44px;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+
+  .hero {
+    padding: 60px 0 140px;
+  }
+  
+}
