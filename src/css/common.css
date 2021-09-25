@@ -21,6 +21,8 @@ body {
 
 .page {
   min-height: 100vh;
+  padding-top: 77px;
+  position: relative;
   background-color: #fff;
 }
 
@@ -29,6 +31,10 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 16px;
+}
+
+.section {
+  padding: 120px 0;
 }
 
 .logo {
@@ -59,4 +65,34 @@ body {
 
 .thin {
   font-weight: 300;
+}
+
+@media screen and (max-width: 1199px) {
+
+
+
+}
+
+@media screen and (max-width: 991px) {
+
+  .page {
+    padding-top: 65px;
+  }
+
+  .section {
+    padding: 70px 0;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+
+  .page {
+    padding-top: 57px;
+  }
+
+  .section {
+    padding: 50px 0;
+  }
+
 }

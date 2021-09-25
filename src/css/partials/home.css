@@ -111,8 +111,11 @@
 
 /* Customers */
 
-.customers__wrapper {
+.customers {
   padding: 70px 0;
+}
+
+.customers__wrapper {
   display: flex;
   justify-content: space-between;
 }
@@ -148,14 +151,6 @@
 
   .customers__item:not(:last-child) {
     margin-right: 16px;
-  }
-
-}
-
-@media screen and (max-width: 720px) {
-
-  .customers__wrapper {
-    padding: 50px 0;
   }
 
 }
@@ -277,7 +272,7 @@
 @media screen and (max-width: 480px) {
 
   .plan-and-manage {
-    padding: 50px;
+    padding: 50px 0;
   }
 
   .plan-and-manage__image {
