@@ -1,6 +1,8 @@
 import gulp from 'gulp'
 import gutil from 'gulp-util'
+import webpack from 'webpack'
 import webpackStream from 'webpack-stream'
+import webpackConfig from './webpack.config'
 import del from 'del'
 import fileInclude from 'gulp-file-include'
 import postcss from 'gulp-postcss'
@@ -51,8 +53,8 @@ export const styles = () => {
 }
 
 export const scripts = () => {
-  return gulp.src('src/js/index.js')
-    .pipe(webpackStream({ mode: isProd ? 'production' : 'development' }))
+  return gulp.src('./src/js/index.js')
+    .pipe(webpackStream({ mode: isProd ? 'production' : 'development', ...webpackConfig }), webpack)
     .pipe(gulp.dest('dist'))
     .pipe(sync.stream())
 }
