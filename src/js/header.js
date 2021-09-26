@@ -9,7 +9,7 @@ function initMenu() {
   button.addEventListener('click', open)
   overlay.addEventListener('click', close)
   content.addEventListener('click', closeAfterInnerClick)
-  window.addEventListener('resize', closeAfterResize)
+  window.addEventListener('resize', _.debounce(closeAfterResize, 500))
 
   function open() {
     isOpen = true
@@ -42,9 +42,11 @@ function initMenu() {
   }
 
   function closeAfterResize(event) {
+    if (!isOpen) return
+
     const target = event.target
 
-    if (target.innerWidth > 991 && isOpen) {
+    if (target.innerWidth > 991) {
       isOpen = false
 
       removeShowClasses()

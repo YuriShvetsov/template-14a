@@ -1,6 +1,6 @@
 .button {
   display: block;
-  padding: 12px 16px;
+  padding: 12px 25px;
 
   font-size: 13px;
   font-weight: bold;
@@ -50,7 +50,12 @@
 }
 
 .button_color_white {
+  color: #A6B6DA;
   background-color: #fff;
+}
+
+.button_color_white:hover {
+  background-color: #f8f8f8;
 }
 
 .button_color_transparent {

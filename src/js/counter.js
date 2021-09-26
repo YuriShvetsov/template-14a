@@ -16,13 +16,19 @@ function initCounters() {
     if (!isActivated && isInViewport()) {
       run()
     } else if (!isActivated && !isInViewport()) {
-      document.addEventListener('scroll', onScroll)
+      onScroll()
     }
 
     function onScroll(event) {
-      if (isInViewport()) {
+      const throttledCheck = _.throttle(check, 200)
+
+      document.addEventListener('scroll', throttledCheck)
+
+      function check() {
+        if (!isInViewport()) return
+
         run()
-        document.removeEventListener('scroll', onScroll)
+        document.removeEventListener('scroll', throttledCheck)
       }
     }
 

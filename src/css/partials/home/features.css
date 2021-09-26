@@ -126,7 +126,7 @@
   }
 
   .features__header {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
   }
 
   .features__stage-icon {
@@ -195,6 +195,18 @@
 
   .features {
     background-position: -150px 50%;
+  }
+
+  .features__stages {
+    margin-bottom: 40px;
+  }
+
+  .features__stage {
+    padding: 10px 0;
+  }
+
+  .features__stage:not(:last-child) {
+    margin-bottom: 15px;
   }
 
   .features__links-gap {
