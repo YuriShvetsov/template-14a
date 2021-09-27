@@ -1,0 +1,44 @@
+/* Get-started */
+
+.get-started {
+  background-image: url(../../../images/clouds-big.svg),
+    linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%);
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.get-started__header {
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+
+  text-align: center;
+}
+
+.get-started__subtitle,
+.get-started__title,
+.get-started__desc {
+  color: #fff;
+}
+
+.get-started__links {
+  display: flex;
+  justify-content: center;
+}
+
+.get-started__link-white {
+  color: #565F82;
+  border-top-right-radius: unset;
+  border-bottom-right-radius: unset;
+}
+
+.get-started__link-transparent {
+  color: #C7D3FF;
+  border: 1px solid #A0B4FF;
+  border-left: none;
+  border-top-left-radius: unset;
+  border-bottom-left-radius: unset;
+}

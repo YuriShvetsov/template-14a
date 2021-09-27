@@ -1,0 +1,63 @@
+/* Newsletter */
+
+.newsletter {
+  border-bottom: 1px solid #D8E3FE;
+}
+
+.newsletter__form {
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: center;
+}
+
+.newsletter__form-header,
+.newsletter__form-body {
+  width: 50%;
+}
+
+.newsletter__form-header {
+  width: 100%;
+  max-width: 340px;
+}
+
+.newsletter__form-body {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.newsletter__form-email {
+  margin-right: 14px;
+  /* flex-shrink: 0; */
+}
+
+@media screen and (max-width: 991px) {
+
+  .newsletter__form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .newsletter__form-header {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+
+  .newsletter__form-body {
+    flex-direction: column;
+    align-items: center
+  }
+
+  .newsletter__form-email {
+    margin-right: unset;
+    margin-bottom: 12px;
+  }
+
+}
