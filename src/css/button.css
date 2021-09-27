@@ -7,6 +7,7 @@
   line-height: 1rem;
   text-decoration: none;
   text-align: center;
+  white-space: nowrap;
 
   border: none;
   outline: none;
@@ -46,7 +47,12 @@
 }
 
 .button_color_gray {
+  color: #7382A3;
+  background-color: #E8ECF4;
+}
 
+.button_color_gray:hover {
+  background-color: #d6deee;
 }
 
 .button_color_white {
