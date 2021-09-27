@@ -64,13 +64,13 @@ body {
 }
 
 .title {
+  font-weight: 500;
   color: #3D4F9F;
 }
 
 .title_md {
   margin: 20px 0;
   font-size: 1.5rem;
-  font-weight: 500;
   line-height: 1.875rem;
 }
 
@@ -161,7 +161,26 @@ body {
 
   .subtitle {
     margin: 6px 0;
-    }
+  }
+
+  .title_md {
+    margin: 16px 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.875rem;
+  }
+  
+  .title_l {
+    margin: 20px 0;
+    font-size: 1.8rem;
+    line-height: 2rem;
+  }
+
+  .title_xl {
+    margin: 24px 0;
+    font-size: 2.25rem;
+    line-height: 3rem;
+  }
 
   .desc {
     margin: 12px 0;
