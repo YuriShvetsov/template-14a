@@ -5,9 +5,9 @@
 }
 
 .customers__wrapper {
-  padding: 0 16px;
+  padding: 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   overflow-x: auto;
 }
 
@@ -16,18 +16,19 @@
 }
 
 .customers__item {
+  padding: 0 16px;
+
   display: flex;
   justify-content: center;
   align-items: flex-end;
 }
 
-.customers__item:not(:last-child) {
-  margin-right: 30px;
-}
-
 .customers__item svg {
   width: auto;
   max-height: 50px;
+
+  object-fit: contain;
+  object-position: center;
 }
 
 .customers__item svg path {
